@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'moyq';
+  src: url('UKIJMoyQ.ttf') format('truetype');
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* src: url("UKIJMoyQ.ttf"); */
+  background-color: #1a1a1a;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: url('album.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+header h1 {
+  color: rgb(192, 56, 32);
+  font-family: 'moyq', Arial;
+  font-size: 4em;
+  text-align: center;
+  font-style: italic;
+  z-index: 2;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+.album-details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.album-cover img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  max-width: 400px; /* 限制专辑封面的最大宽度 */
+}
+
+.album-info {
+  margin-left: 40px;
+  max-width: 600px;
+  flex: 1;
+}
+
+.album-info h2 {
+  font-family: 'moyq', Arial;
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.album-info p {
+  font-size: 1.5em;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.tracklist h3 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.tracklist ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tracklist li {
+  margin-bottom: 20px;
+}
+
+audio {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 10px;
+}

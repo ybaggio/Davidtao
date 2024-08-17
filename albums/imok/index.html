@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I'm OK</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>I'm ok</h1>
+  </header>
+
+  <section class="album-details">
+    <div class="album-cover">
+      <img src="album.jpg" alt="专辑封面">
+    </div>
+
+    <div class="album-info">
+      <h2>I'm OK</h2>
+      <p>陶喆</p>
+      <p>点击歌曲标题以播放，播放状态下再次点击可暂停</p>
+
+      <div class="tracklist">
+        <h3>Songs</h3>
+        <ul>
+          <li>
+            <p class="song-title" data-song="songs/doxo.mp3">▶ Doxology </p>
+          </li>
+          <li>
+            <p class="song-title" data-song="songs/find.mp3">▶ 找自己</p>
+          </li>
+          <li>
+            <p class="song-title" data-song="songs/girl.mp3">▶ 小镇姑娘</p>
+          </li>
+          <li>
+            <p class="song-title" data-song="songs/flower.mp3">▶ 夜来香</p>
+          </li>
+          <li>
+            <p class="song-title" data-song="songs/friend.mp3">▶ 普通朋友</p>
+          </li>
+          <li>
+            <p class="song-title" data-song="songs/imok.mp3">▶ I'm OK</p>
+          </li>
+          <li>
+            <p class="song-title" data-song="songs/go.mp3">▶ 说走就走</p>
+          </li>
+          <li>
+            <p class="song-title" data-song="songs/thank.mp3">▶ 多谢你</p>
+          </li>
+          <li>
+            <p class="song-title" data-song="songs/tf.mp3">▶ 马戏团</p>
+          </li>
+          <li>
+            <p class="song-title" data-song="songs/day.mp3">▶ 天天</p>
+          </li>
+          <li>
+            <p class="song-title" data-song="songs/angeline.mp3">▶ Angeline</p>
+          </li>
+          <li>
+            <p class="song-title" data-song="songs/amen.mp3">▶ Amen</p>
+          </li>
+        </ul>
+        <!-- <button id="pause-btn">暂停</button> -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 隐藏的播放器 -->
+  <audio id="audio-player" style="display: none;">
+    <source id="audio-source" src="" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
+
+  <script>
+    let isPlaying = false;
+    let currentSong = null;
+
+    const audioPlayer = document.getElementById('audio-player');
+    const audioSource = document.getElementById('audio-source');
+    const pauseBtn = document.getElementById('pause-btn');
+
+    function playSong(song) {
+      audioSource.src = song;
+      audioPlayer.load();
+      audioPlayer.play();
+      isPlaying = true;
+      currentSong = song;
+    }
+
+    document.querySelectorAll('.song-title').forEach(function (songTitle) {
+      songTitle.addEventListener('click', function () {
+        var song = this.getAttribute('data-song');
+
+        // 如果点击的是当前正在播放的歌曲
+        if (audioSource.src.endsWith(song)) {
+          if (isPlaying) {
+            audioPlayer.pause();
+            isPlaying = false;
+            pauseBtn.textContent = '播放';
+          } else {
+            audioPlayer.play();
+            isPlaying = true;
+            pauseBtn.textContent = '暂停';
+          }
+          return;
+        }
+
+        playSong(song);
+        pauseBtn.textContent = '暂停';
+
+        // 监听播放结束事件
+        audioPlayer.addEventListener('ended', function () {
+          isPlaying = false;
+          currentSong = null;
+          pauseBtn.textContent = '播放';
+        });
+      });
+    });
+
+    // 暂停/播放按钮逻辑
+    pauseBtn.addEventListener('click', function () {
+      if (isPlaying) {
+        audioPlayer.pause();
+        this.textContent = '播放';
+      } else {
+        audioPlayer.play();
+        this.textContent = '暂停';
+      }
+      isPlaying = !isPlaying;
+    });
+
+    // 页面加载时自动播放第一首歌曲
+    window.onload = function () {
+      const firstSong = document.querySelector('.song-title').getAttribute('data-song');
+      playSong(firstSong);
+      pauseBtn.textContent = '暂停';
+    };
+  </script>
+</body>
+
+</html>
