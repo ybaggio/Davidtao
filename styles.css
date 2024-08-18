@@ -2,13 +2,13 @@ body {
   overflow-x: hidden;
   font-family:"Comic Sans MS", cursive, sans-serif;
 }
-h2 {  
+h2 {
   color: white;
   font-size: 2em;
 }
 .line a {
   transition: width 0.4s, height 0.4s, left 0.4s, top 0.4s;
-  -webkit-transition: width 0.4s, height 0.4s, left 0.4s, top 0.4s; 
+  -webkit-transition: width 0.4s, height 0.4s, left 0.4s, top 0.4s;
 }
 .line h2 {
   color: white;
@@ -100,8 +100,8 @@ h2 {
 footer {
   height: calc(20vh);
   background-color: rgb(226,222,222);
-  display: block; 
-  align-items: Center; 
+  display: block;
+  align-items: Center;
   text-align: center;
 }
 
@@ -112,26 +112,28 @@ footer a h2 {
 
 footer a {
   text-align: center;
-  font-size: large; 
+  font-size: large;
   text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
 }
- 
+
 @media screen and (min-width: 1000px){
 
 .main {
   height: 10000px;
 }
 .headjpg img{
+  position: relative;
+  top: calc(11vh);
+  object-fit: cover;
   width: calc(100vw);
-  
-  /* height: calc(90vh); */
+  height: calc(50vw);
 }
 
 .headbar {
-  height: calc(14vh);  
+  height: calc(14vh);
   width: calc(100vw);
 }
 
