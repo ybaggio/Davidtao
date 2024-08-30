@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="keywords" content="The Promise-陶喆,歌曲宝,歌曲搜索,音乐免费下载,MP3下载,收费音乐免费下载,付费音乐免费下载,在线mp3下载网站,歌曲免费下载工具">
+    <meta name="description"
+          content="The Promise-陶喆.mp3免费在线下载播放,歌曲宝在线音乐搜索，可以在线免费下载全网MP3付费歌曲、流行音乐、经典老歌等。曲库完整，更新迅速，试听流畅，支持高品质|无损音质~">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="音乐MP3免费下载网站">
+    <meta name="application-name" content="音乐MP3免费下载网站">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>The Promise-陶喆-mp3免费在线下载播放-歌曲宝-找歌就用歌曲宝-MP3音乐高品质在线免费下载</title>
+    <link href="//lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.6.1/css/bootstrap.min.css" type="text/css"
+          rel="stylesheet"/>
+    <link href="//lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css"
+          type="text/css" rel="stylesheet"/>
+    
+    <link href="//lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery-confirm/3.3.4/jquery-confirm.min.css"
+          type="text/css" rel="stylesheet"/>
+    <script src="//lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"
+            type="application/javascript"></script>
+    <script defer src="//lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.6.1/js/bootstrap.min.js"
+            type="application/javascript"></script>
+    <script defer src="//lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery-confirm/3.3.4/jquery-confirm.min.js"
+            type="application/javascript"></script>
+    <script defer src="/static/js/common.js" type="application/javascript"></script>
+        <meta property="og:image" content="http://img2.kuwo.cn/star/albumcover/500/58/68/1186556298.jpg"/>
+    <link href="//lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
+    <script defer src="//lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"
+            type="application/javascript"></script>
+    <script defer src="//lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/layer/3.5.1/layer.min.js"
+            type="application/javascript"></script>
+        <style>
+        .content-lrc {
+            max-height: 4rem;
+            overflow: hidden;
+        }
+
+        .expand {
+            text-align: center;
+            cursor: pointer;
+            color: #009688;
+        }
+
+        .height-auto {
+            max-height: unset;
+        }
+
+        .nowrap-hidden {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .aplayer-notice {
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container" style="max-width: 900px">
+    <header class="mt-2 mb-2">
+    <div class="d-flex justify-content-center align-content-center">
+        <a class="text-dark font-weight-bolder d-flex align-content-center" href="/">
+            <img width="50" height="50" src="/static/img/logo.png" alt="logo">
+            <span style="font-size: 2rem">歌曲宝</span>
+        </a>
+        <div class="ml-1 d-flex align-items-center justify-content-center flex-column">
+            <a class="text-muted font-weight-bold" href="/">&nbsp;gequbao.com</a>
+                            <p class="px-1"
+                   style="background: #FF5722;color: white;font-size: smaller; font-weight: bolder;width: fit-content;letter-spacing: 3px;border-radius: 10px"
+                   title="slogan">
+                    找歌就用歌曲宝
+                </p>
+                    </div>
+    </div>
+</header>
+        
+    
+    
+    <div id="aplayer">
+        <img src="http://img2.kuwo.cn/star/albumcover/500/58/68/1186556298.jpg" style="width: 90px;height: 90px;" alt="cover">
+    </div>
+    
+    <div class="card shadow-sm mb-3">
+        <div class="card-body">
+            <div id="music-title" class="card-title text-center"
+                 style="font-size:larger; overflow: hidden; text-overflow: ellipsis;">
+                <h1 class="badge badge-pill" style="background-color: #16b777;color: #fff;white-space: normal;">
+                    The Promise - 陶喆
+                </h1>
+            </div>
+
+                            <div
+                        style="border-left: 4px solid #ef4444;background-color: #fee2e2;padding: .5rem;margin-bottom: 1rem;color:#434343">
+                    <i class="fa fa-info-circle"></i>
+                    如无法下载或有错误，请刷新重试或点此 <a style="text-decoration: underline;" onclick="errFk(mp3_id)"
+                                                           href="javascript:void(0)">反馈</a> 给我们
+                </div>
+            
+            <div class="input-group mb-1 overflow-hidden">
+                <div class="input-group-prepend">
+                    <i class="fa fa-music input-group-text"></i>
+                </div>
+                <span class="form-control bg-light nowrap-hidden">
+                   The Promise-陶喆.mp3
+                </span>
+                <div class="input-group-append">
+                    <a id="btn-download-mp3" class="btn btn-primary" target="_blank">
+                        <i class="fa fa-download"></i>
+                        下载歌曲</a>
+                </div>
+            </div>
+            <div class="input-group overflow-hidden">
+                <div class="input-group-prepend">
+                    <i class="fa fa-file-text-o input-group-text"></i>
+                </div>
+                <span class="form-control bg-light nowrap-hidden">
+                    [00:00.0]The Promise - 陶喆 (David Zee Tao)
+[00:11...
+                </span>
+                <div class="input-group-append">
+                    <a id="btn-download-lrc" class="btn btn-primary"><i class="fa fa-download"></i> 下载歌词</a>
+                </div>
+            </div>
+            <div style="display: block">
+                <div class="content-lrc mt-1" id="content-lrc">[00:00.0]The Promise - 陶喆 (David Zee Tao)<br />
+[00:11.52]曲：陶喆<br />
+[00:23.05]词：林夕<br />
+[00:34.57]总是对最亲近的人 才最有性格地发火<br />
+[00:47.03]只是想我有多失落  没看到身边人寂寞<br />
+[00:56.79]我让你失望  我很难过<br />
+[01:03.22]我也看不起  这样一个我<br />
+[01:09.41]不会再推说  人总是软弱<br />
+[01:15.79]不会让自己  输给了生活<br />
+[01:22.04]在赢回你赞赏之前起码要做  我欣赏的我<br />
+[01:37.85]总是欺负你包容我 就把幽默变成了刻薄<br />
+[01:50.229996]总是自恃感情不错 就把自尊看成了枷锁<br />
+[02:00.05]我让你失望  我很难过<br />
+[02:06.45]我也看不起  这样的一个我<br />
+[02:12.52]不会再推说 人总是软弱<br />
+[02:19.08]不会让自己  输给了生活<br />
+[02:25.20999]在赢回你赞赏之前起码要做  我欣赏的我<br />
+[02:38.45999]我答应不再说什么  为势所迫<br />
+[02:50.51]承诺只为你而执着  承诺不为自己开脱<br />
+[03:03.2]我承诺不会再随便  许下承诺<br />
+[03:13.07]我让你失望  我比你难过<br />
+[03:18.77]我也看不起  这样一个我<br />
+[03:25.4]不会再推说  是人性的软弱<br />
+[03:31.53]不会让自己  输给了我<br />
+[03:37.91]我不要犯所有人也爱犯的错  让你更爱我</div>
+                <div class="expand" data-status="up">展开</div>
+            </div>
+        </div>
+        <div class="card-footer" id="download-log">
+            <div style="overflow:hidden;height:1rem;line-height: 1rem;">
+                <ul class="list-group">
+                                            <li>
+                            <a href="/s/海阔天空" title="海阔天空" style="font-size: small"
+                               target="_blank">
+                                <span class="text-muted">
+                                    游客2c2146刚刚搜索了
+                                </span>
+                                海阔天空
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/s/勇气大爆发" title="勇气大爆发" style="font-size: small"
+                               target="_blank">
+                                <span class="text-muted">
+                                    游客a2a4bb刚刚搜索了
+                                </span>
+                                勇气大爆发
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/music/11782" title="红色高跟鞋 - 隔壁老樊" style="font-size: small"
+                               target="_blank">
+                                <span class="text-muted">
+                                    游客be4cfe刚刚下载了
+                                </span>
+                                红色高跟鞋 - 隔壁老樊
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/music/74519" title="安静的午后 - Pianoboy高至豪" style="font-size: small"
+                               target="_blank">
+                                <span class="text-muted">
+                                    游客6419e0刚刚下载了
+                                </span>
+                                安静的午后 - Pianoboy高至豪
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/s/再公无强的情人" title="再公无强的情人" style="font-size: small"
+                               target="_blank">
+                                <span class="text-muted">
+                                    游客8e467f刚刚搜索了
+                                </span>
+                                再公无强的情人
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/music/273" title="暮色回响 - 吉星出租" style="font-size: small"
+                               target="_blank">
+                                <span class="text-muted">
+                                    游客37cf35刚刚下载了
+                                </span>
+                                暮色回响 - 吉星出租
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/music/10952142" title="如果只转身后退就能回到那个夏天 - 一般诗云p" style="font-size: small"
+                               target="_blank">
+                                <span class="text-muted">
+                                    游客f134c8刚刚下载了
+                                </span>
+                                如果只转身后退就能回到那个夏天 - 一般诗云p
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/music/7005" title="溯 (Reverse) feat. 马吟吟 - CORSAK胡梦周&amp;马吟吟" style="font-size: small"
+                               target="_blank">
+                                <span class="text-muted">
+                                    游客20ed49刚刚下载了
+                                </span>
+                                溯 (Reverse) feat. 马吟吟 - CORSAK胡梦周&amp;马吟吟
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/s/逃爱" title="逃爱" style="font-size: small"
+                               target="_blank">
+                                <span class="text-muted">
+                                    游客aefa48刚刚搜索了
+                                </span>
+                                逃爱
+                            </a>
+                        </li>
+                                            <li>
+                            <a href="/s/韶程" title="韶程" style="font-size: small"
+                               target="_blank">
+                                <span class="text-muted">
+                                    游客e941c4刚刚搜索了
+                                </span>
+                                韶程
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="ad-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+                    <h5 class="modal-title badge bg-success text-white" id="exampleModalLongTitle">
+                        温馨提示
+                    </h5>
+                    <span class="font-weight-bolder text-danger ml-1" id="ad-modal-prompt"></span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex justify-content-center" id="ad-modal-prepend">
+
+                </div>
+                <div class="modal-body" id="ad-modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <hr>
+    
+    <div class="card shadow-sm mb-2">
+    <div class="card-body">
+        <h6 class="card-title">
+            <a href="/hot_music/1" style="color:#FF5722;text-shadow: 0 0 1px #ffeb3b;">
+                <img src="/static/img/like.png" alt="hot"> 热门歌曲
+            </a>
+            <small>
+                <a class="float-right text-muted" href="/hot_music/1">更多 <i class="fa fa-angle-right"></i></a>
+            </small>
+        </h6>
+        <ul class="list-group list-group-flush">
+                            <li class="list-group-item list-group-item-action"
+                    style="padding: .5rem 1.25rem;font-weight: bolder;cursor: pointer"
+                    onclick="window.location.href='/music/7157';return false;">
+                    <div class="float-left">
+                        <a href="/music/7157" onclick="event.stopPropagation();">
+                            <span style="color: #CCCC00" class="font-weight-bolder">一路生花</span>
+                            -
+                            <small class="text-muted">温奕心</small>
+                        </a>
+                    </div>
+                    <div class="float-right">
+                        <a href="/music/7157" onclick="event.stopPropagation();" style="font-size: larger">
+                            <i class="fa fa-play-circle"></i></a>
+                    </div>
+                </li>
+                            <li class="list-group-item list-group-item-action"
+                    style="padding: .5rem 1.25rem;font-weight: bolder;cursor: pointer"
+                    onclick="window.location.href='/music/17846';return false;">
+                    <div class="float-left">
+                        <a href="/music/17846" onclick="event.stopPropagation();">
+                            <span style="color: #FF33CC" class="font-weight-bolder">Love Story</span>
+                            -
+                            <small class="text-muted">Taylor Swift</small>
+                        </a>
+                    </div>
+                    <div class="float-right">
+                        <a href="/music/17846" onclick="event.stopPropagation();" style="font-size: larger">
+                            <i class="fa fa-play-circle"></i></a>
+                    </div>
+                </li>
+                            <li class="list-group-item list-group-item-action"
+                    style="padding: .5rem 1.25rem;font-weight: bolder;cursor: pointer"
+                    onclick="window.location.href='/music/6421';return false;">
+                    <div class="float-left">
+                        <a href="/music/6421" onclick="event.stopPropagation();">
+                            <span style="color: #009999" class="font-weight-bolder">十年</span>
+                            -
+                            <small class="text-muted">陈奕迅</small>
+                        </a>
+                    </div>
+                    <div class="float-right">
+                        <a href="/music/6421" onclick="event.stopPropagation();" style="font-size: larger">
+                            <i class="fa fa-play-circle"></i></a>
+                    </div>
+                </li>
+                            <li class="list-group-item list-group-item-action"
+                    style="padding: .5rem 1.25rem;font-weight: bolder;cursor: pointer"
+                    onclick="window.location.href='/music/7859';return false;">
+                    <div class="float-left">
+                        <a href="/music/7859" onclick="event.stopPropagation();">
+                            <span style="color: #339999" class="font-weight-bolder">凄美地</span>
+                            -
+                            <small class="text-muted">郭顶</small>
+                        </a>
+                    </div>
+                    <div class="float-right">
+                        <a href="/music/7859" onclick="event.stopPropagation();" style="font-size: larger">
+                            <i class="fa fa-play-circle"></i></a>
+                    </div>
+                </li>
+                            <li class="list-group-item list-group-item-action"
+                    style="padding: .5rem 1.25rem;font-weight: bolder;cursor: pointer"
+                    onclick="window.location.href='/music/45638';return false;">
+                    <div class="float-left">
+                        <a href="/music/45638" onclick="event.stopPropagation();">
+                            <span style="color: #CC0066" class="font-weight-bolder">如愿</span>
+                            -
+                            <small class="text-muted">王菲</small>
+                        </a>
+                    </div>
+                    <div class="float-right">
+                        <a href="/music/45638" onclick="event.stopPropagation();" style="font-size: larger">
+                            <i class="fa fa-play-circle"></i></a>
+                    </div>
+                </li>
+                            <li class="list-group-item list-group-item-action"
+                    style="padding: .5rem 1.25rem;font-weight: bolder;cursor: pointer"
+                    onclick="window.location.href='/music/13379';return false;">
+                    <div class="float-left">
+                        <a href="/music/13379" onclick="event.stopPropagation();">
+                            <span style="color: #FF6600" class="font-weight-bolder">天下</span>
+                            -
+                            <small class="text-muted">张杰</small>
+                        </a>
+                    </div>
+                    <div class="float-right">
+                        <a href="/music/13379" onclick="event.stopPropagation();" style="font-size: larger">
+                            <i class="fa fa-play-circle"></i></a>
+                    </div>
+                </li>
+                            <li class="list-group-item list-group-item-action"
+                    style="padding: .5rem 1.25rem;font-weight: bolder;cursor: pointer"
+                    onclick="window.location.href='/music/272';return false;">
+                    <div class="float-left">
+                        <a href="/music/272" onclick="event.stopPropagation();">
+                            <span style="color: #0099CC" class="font-weight-bolder">暮色回响</span>
+                            -
+                            <small class="text-muted">张韶涵</small>
+                        </a>
+                    </div>
+                    <div class="float-right">
+                        <a href="/music/272" onclick="event.stopPropagation();" style="font-size: larger">
+                            <i class="fa fa-play-circle"></i></a>
+                    </div>
+                </li>
+                            <li class="list-group-item list-group-item-action"
+                    style="padding: .5rem 1.25rem;font-weight: bolder;cursor: pointer"
+                    onclick="window.location.href='/music/9346';return false;">
+                    <div class="float-left">
+                        <a href="/music/9346" onclick="event.stopPropagation();">
+                            <span style="color: #336699" class="font-weight-bolder">平凡之路</span>
+                            -
+                            <small class="text-muted">朴树</small>
+                        </a>
+                    </div>
+                    <div class="float-right">
+                        <a href="/music/9346" onclick="event.stopPropagation();" style="font-size: larger">
+                            <i class="fa fa-play-circle"></i></a>
+                    </div>
+                </li>
+                            <li class="list-group-item list-group-item-action"
+                    style="padding: .5rem 1.25rem;font-weight: bolder;cursor: pointer"
+                    onclick="window.location.href='/music/5465';return false;">
+                    <div class="float-left">
+                        <a href="/music/5465" onclick="event.stopPropagation();">
+                            <span style="color: #CC3399" class="font-weight-bolder">江南</span>
+                            -
+                            <small class="text-muted">林俊杰</small>
+                        </a>
+                    </div>
+                    <div class="float-right">
+                        <a href="/music/5465" onclick="event.stopPropagation();" style="font-size: larger">
+                            <i class="fa fa-play-circle"></i></a>
+                    </div>
+                </li>
+                            <li class="list-group-item list-group-item-action"
+                    style="padding: .5rem 1.25rem;font-weight: bolder;cursor: pointer"
+                    onclick="window.location.href='/music/5943';return false;">
+                    <div class="float-left">
+                        <a href="/music/5943" onclick="event.stopPropagation();">
+                            <span style="color: #FF6666" class="font-weight-bolder">See You Again</span>
+                            -
+                            <small class="text-muted">Wiz Khalifa&amp;Charlie Puth</small>
+                        </a>
+                    </div>
+                    <div class="float-right">
+                        <a href="/music/5943" onclick="event.stopPropagation();" style="font-size: larger">
+                            <i class="fa fa-play-circle"></i></a>
+                    </div>
+                </li>
+                    </ul>
+    </div>
+</div>
+    
+    <script type="text/javascript">
+        $(function () {
+            window.mp3_id = 380334;
+            window.mp3_url = '';
+            window.mp3_title = 'The Promise';
+            window.mp3_author = '陶喆';
+            window.mp3_name = mp3_title + '-' + mp3_author;
+            window.mp3_type = 0;
+            window.mp3_cover = 'http://img2.kuwo.cn/star/albumcover/500/58/68/1186556298.jpg';
+            window.error_msg = '';
+            window.is_white_url = false;
+            window.mp3_extra_url = 'https://pan.xunlei.com/s/VO2vAS6ObcUBNUSxmQv4n-N8A1?pwd=ceuf#';
+            window.ap = new APlayer({
+                container: document.getElementById('aplayer'),
+                autoplay: false,
+                theme: '#0e90d2',
+                lrcType: 1,
+                preload: 'metadata',
+                // loop: 'none',
+                order: 'list'
+            });
+
+            let btn_download_mp3 = $('#btn-download-mp3');
+            let btn_download_lrc = $('#btn-download-lrc');
+
+            ap.on('listswitch', function () {
+                layer.tips('点击这里播放', '.aplayer-button', {
+                    tips: [3, '#FF5722'],
+                });
+            });
+            
+                        
+            ap.on('error', function (error) {
+                if (error_msg.length === 0) {
+                    if (is_white_url || mp3_extra_url.length > 0) {
+                        error_msg = '当前歌曲在线播放出错，您可以下载到本地播放~';
+                    } else {
+                        error_msg = '当前歌曲解析出错，暂无法下载';
+                    }
+                }
+                ap.notice('<span class="font-weight-bolder" style="color:#FF5722;background-color:#f4f4f5"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> ' + error_msg + '</span>', 3000, 1);
+            });
+            $('.aplayer-pic').click(function () {
+                if (error_msg) {
+                    ap.notice('<span class="font-weight-bolder" style="color:#FF5722;background-color:#f4f4f5"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> ' + error_msg + '</span>', 3000, 1);
+                }
+            });
+            
+            
+                        
+            btn_download_mp3.click(function () {
+                
+                
+                
+
+                //是否有错误信息
+                if (is_white_url === false && error_msg.length > 0 && mp3_extra_url.length === 0) {
+                    jAlert(error_msg);
+                    return false;
+                }
+
+                $.ajaxSettings.async = false;
+                let adShow = false;
+
+                $.ajax({
+                    type: "POST",
+                    url: "/api/ad_handle",
+                    dataType: "json",
+                    data: {
+                        "mid": mp3_id,
+                        "m_type": 1
+                    },
+                    success: function (data) {
+                        if (data.code === 1) {
+                            return true;
+                        } else if (data.code === 2) {
+                            $('#ad-modal-prompt').html('');
+                            $('#ad-modal-prepend').html('');
+                            $('#ad-modal-body').html(data.data.content);
+                            $('#ad-modal').modal('toggle');
+                            adShow = true;
+                            return false;
+                        } else if (data.code === 3) {
+                            $('#ad-modal-prompt').html(data.data.answerPrompt);
+                            $('#ad-modal-prepend').html(data.data.answerFormHtml);
+                            $('#ad-modal-body').html(data.data.content);
+                            $('#ad-modal').modal('toggle');
+                            adShow = true;
+                            return false;
+                        } else if (data.code === 0) {
+                            jAlert(data.msg);
+                            adShow = true;
+                            return false;
+                        }
+                    },
+                    error: function (e) {
+                        jAlert('请求失败，请重试！');
+                        adShow = true;
+                        return false;
+                    },
+                });
+
+                $.ajaxSettings.async = true;
+                if (adShow) return false;
+
+                                        
+                if (is_qq_wx_tb()) {
+                    return false;
+                }
+
+                if (mp3_extra_url.length !== 0) {
+                                        $.alert({
+                        title: '<span style="color: #16b777;">请选择音质</span>',
+                        content: `
+<div class="d-flex justify-content-between">
+<a href="${mp3_url}" download="${mp3_name}.mp3" class="btn btn-link" target="_blank" onclick="downloadLog(mp3_id)">下载低品质MP3</a>
+<a href="${mp3_extra_url}" class="btn btn-link" target="_blank" onclick="return extraUrlDo(mp3_id,mp3_extra_url)"><span class="badge badge-danger">推荐</span>下载高品质MP3</a>
+</div>
+`,
+                        closeIcon: true,
+                        typeAnimated: true,
+                        backgroundDismiss: true,
+                        buttons: false,
+                        columnClass: 'col-md-5'
+                    });
+                    return false;
+                                    } else {
+                    downloadLog(mp3_id);
+                }
+            });
+
+            //歌词按钮点击
+            btn_download_lrc.click(function () {
+                let textToDownload = $('#content-lrc').text();
+                let blob = new Blob([textToDownload], {type: 'text/plain'});
+                let url = URL.createObjectURL(blob);
+                let a = document.createElement('a');
+                a.style.display = 'none'; // 隐藏a元素
+                a.href = url;
+                a.download = window.mp3_name + '.lrc'; // 设置下载文件的名称
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                window.URL.revokeObjectURL(url);
+            });
+
+            //获取歌曲播放地址
+            let init_status = 0;
+            $.ajax({
+                type: "GET",
+                url: "/api/play_url",
+                dataType: "json",
+                data: {id: mp3_id, json: 1},
+                success: function (result) {
+                    if (result.code === 1) {
+                        init_status = 1;
+                        mp3_url = result.data.url;
+                        is_white_url = result.data.is_while_url;
+                    } else {
+                        return jAlert(result.msg);
+                    }
+                },
+                error: function (e) {
+                    if (mp3_type === 0) {
+                        if (e.status === 429) {
+                            error_msg = '请求过于频繁，请稍后再试';
+                            return jAlert(error_msg);
+                        }
+                        error_msg = '请求失败，请刷新重试！';
+                        return jAlert(error_msg);
+                    }
+                },
+                complete: function () {
+                    if (mp3_extra_url.length > 0) {
+                        btn_download_mp3.attr('href', mp3_extra_url);
+                    } else {
+                        if (init_status === 1) {
+                            btn_download_mp3.attr('href', mp3_url);
+                            btn_download_mp3.attr('download', mp3_name + '.mp3');
+                        }
+                    }
+                    let lrc = $('#content-lrc').text();
+                    ap.list.add([{
+                        name: mp3_title,
+                        artist: mp3_author,
+                        url: mp3_url,
+                        cover: mp3_cover,
+                        lrc: lrc
+                    }]);
+                    ap.template.dtime.innerHTML = '<span style="color: #999999;">04:30</span>';
+                }
+            });
+
+
+            
+            $('.expand').click(function () {
+                if ($(this).attr('data-status') === 'up') {
+                    $('.content-lrc').addClass('height-auto');
+                    $(this).attr('data-status', 'down')
+                    $(this).text('收起')
+                } else {
+                    $('.content-lrc').removeClass('height-auto');
+                    $(this).attr('data-status', 'up')
+                    $(this).text('展开')
+                }
+            });
+
+            
+            setTimeout('autoScroll("#download-log")', 3500);
+        });
+        
+        function autoScroll(obj) {
+            $(obj).find("ul").animate({
+                    marginTop: "-1rem"
+                },
+                1000,
+                function () {
+                    $(this).css({
+                        marginTop: "0"
+                    }).find("li:first").appendTo(this);
+                    setTimeout('autoScroll("#download-log")', 3500);
+                });
+        }
+
+        
+        function downloadLog(id, linkType = 1) {
+            $.post("/api/download_log", {
+                music_id: id,
+                link_type: linkType
+            });
+        }
+
+
+        
+        function extraUrlDo(id, url) {
+            downloadLog(id, 2);
+                            return true;
+        }
+
+        function errFk(id) {
+            jAlert(`
+<ul class='list-group mt-3'>
+    <li class='list-group-item'><span class='text-info'>当前歌曲：</span> <span
+            style='color:#fa5661;font-weight: bolder'>${mp3_title}-${mp3_author}</span></li>
+    <li class='list-group-item'>
+        <span class='text-info'>错误类型：</span><br/>
+        <div class='form-check form-check-inline'>
+            <input name='musicErrType' class='form-check-input' type='checkbox' id='err-download' value='不能下载'>
+            <label style='color:#ff5722' class='form-check-label' for='err-download'>不能下载 <small class="text-muted">
+                (下载链接报错无法打开)
+            </small></label>
+
+        </div>
+        <div class='form-check form-check-inline'>
+            <input name='musicErrType' class='form-check-input' type='checkbox' id='err-match' value='歌曲不对'>
+            <label style='color:#ff5722' class='form-check-label' for='err-match'>歌曲不对 <small class="text-muted">
+                (播放/下载的歌曲与原歌名不符)
+            </small></label>
+        </div>
+<div class='form-check form-check-inline'>
+            <input name='musicErrType2' class='form-check-input' type='checkbox' id='err-other' value="1">
+            <label style='color:#ff5722' class='form-check-label' for='err-other'>其他错误 <small style="color:#007bff">
+                (手动输入错误描述信息)
+            </small></label>
+        </div>
+<div class="form-group mt-1">
+            <input class='form-control' style="display:none" placeholder="请输入错误描述（15个字符内）" type='text' id='err-other-input'>
+  </div>
+    </li>
+</ul>
+            `, 'blue', true, {
+                onOpen: function () {
+                    $('input[name="musicErrType"]').change(function () {
+                        if ($('input[name="musicErrType"]').is(':checked')) {
+                            $("#err-other").prop("checked", false);
+                            $('#err-other-input').hide();
+                        }
+                    })
+
+                    $('#err-other').change(function () {
+                        if ($(this).is(':checked')) {
+                            $('input[name="musicErrType"]').prop("checked", false);
+                            $('#err-other-input').show().focus();
+                        } else {
+                            $('#err-other-input').hide();
+                        }
+                    })
+                },
+                columnClass: 'col-md-5',
+                buttons: {
+                    ok: {
+                        text: '提交反馈',
+                        btnClass: 'btn-blue',
+                        action: function () {
+                            let musicErrType = [];
+                            $('input[name="musicErrType"]:checked').each(function (index, element) {
+                                musicErrType.push($(this).val());
+                            });
+                            if ($('#err-other:checked').val()) {
+                                let err_input = $('#err-other-input').val().trim();
+                                if (err_input.length == 0) {
+                                    alert('错误描述不能为空');
+                                    $('#err-other-input').show().focus();
+                                    return false;
+                                }
+                                if (err_input.length > 15) {
+                                    alert('错误描述不能超过15个字');
+                                    $('#err-other-input').show().focus();
+                                    return false;
+                                }
+                                musicErrType.push(err_input);
+                            }
+                            if (musicErrType.length <= 0) {
+                                alert('请至少选择一种错误类型');
+                                return false;
+                            }
+                            let btn = $(this);
+                            console.log(btn)
+                            btn.prop('disabled', true);
+                            $.ajax({
+                                type: "POST",
+                                url: "/api/feedback",
+                                dataType: "json",
+                                data: {
+                                    "musicErrType": musicErrType,
+                                    "musicId": id,
+                                },
+                                success: function (result) {
+                                    if (result.code === 1) {
+                                        jAlert(result.msg, 'green', true, {icon: 'fa fa-check-circle', title: '提交成功'});
+                                        return true;
+                                    } else {
+                                        jAlert(result.msg);
+                                        return false;
+                                    }
+                                },
+                                error: function (e) {
+                                    jAlert('网络请求失败，请稍后重试！');
+                                },
+                                complete: function () {
+                                    btn.prop('disabled', false);
+                                    return true;
+                                }
+                            });
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+
+    
+    <div class="row mb-2">
+                    <div class="col-md-6 mb-1">
+                <div><a href="/goto?u=https%3A%2F%2Fdown.kanqiu49.com%2F%3Fagent%3Dgequbao%26app%3Dgequbaoapp&extra=&t=1" target="_blank" rel="nofollow noopener"><img style="width: 100%; max-height: 70px;" src="https://www.imageoss.com/images/2024/08/02/QQ20230928164205fd4a51568bf582da.jpg" alt="广告图片" /></a></div>
+            </div>
+                            <div class="col-md-6 mb-1 d-none d-md-block">
+                <a href="javascript:void(0)" class="swhz" rel="nofollow">
+                    <img style="width: 100%; max-height: 70px;" src="/static/img/ggzs.jpg" alt="广告图片">
+                </a>
+            </div>
+            </div>
+
+</div>
+
+
+<footer class="bg-dark text-white text-center mt-3" style="line-height: 1.5rem;">
+    <a href="javascript:void(0)" class="text-white swhz" rel="nofollow"><u>商务合作</u></a>
+    <a href="javascript:void(0)" class="text-white" data-toggle="modal" data-target="#feedbackModal"
+       rel="nofollow"><u>反馈建议</u></a>
+    <a href="javascript:void(0)" class="text-white" id="mzsm" rel="nofollow"><u>免责声明</u></a>
+    <br>
+    <a href="/" class="text-white">歌曲宝 - gequbao.com</a>
+    © 2024
+    <span style="display: none">
+    
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c2b69091f94cb4368f25c28fc7c2d28c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    </span>
+</footer>
+
+
+<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: none;">
+                <h5 class="modal-title" id="feedbackModalLabel" style="color: #007bff;font-weight: bold;">意见反馈</h5>
+                <button type="button" id="feedbackModalClose" class="close" data-dismiss="modal" aria-label="关闭">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="feedbackType">反馈类型</label>
+                    <select class="form-control" id="feedbackType" required>
+                        <option value="" selected disabled>请选择反馈类型</option>
+                        <option value="function">功能建议（网站功能改进建议）</option>
+                        <option value="music">歌曲收录（请提供歌手和歌名）</option>
+                        <option value="other">其他</option>
+                    </select>
+                </div>
+                <div class="form-group" id="link-group" style="display: none">
+                    <label for="feedbackContact">错误链接</label>
+                    <input type="text" class="form-control" placeholder="输入出错的网址链接" id="link" required>
+                </div>
+                <div class="form-group">
+                    <label for="feedbackContent">反馈内容</label>
+                    <textarea class="form-control" id="feedbackContent" rows="3" required
+                              style="resize: none;"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="feedbackContact">联系邮箱</label>
+                    <input type="text" class="form-control" id="feedbackContact" required>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="resetFormBtn" class="btn btn-secondary" style="margin-right: 10px">清空表单
+                </button>
+                <button type="button" id="submitFormBtn" class="btn btn-primary">提交反馈</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+
+        let inputFeedbackType = $('#feedbackType');
+        let inputFeedbackContent = $('#feedbackContent');
+        let inputFeedbackContact = $('#feedbackContact');
+
+        $('#resetFormBtn').click(function () {
+            inputFeedbackContent.val('');
+        });
+
+
+        $('#submitFormBtn').click(function () {
+            let fkjy_type = $.trim(inputFeedbackType.val());
+            if (!fkjy_type) {
+                alert('请先选择反馈类型');
+                inputFeedbackType.focus();
+                return false;
+            }
+
+            let fkjy_content = $.trim(inputFeedbackContent.val());
+            if (fkjy_content.length < 1) {
+                alert('请输入反馈内容~');
+                inputFeedbackContent.focus();
+                return false;
+            }
+
+            let fkjy_contact = $.trim(inputFeedbackContact.val());
+            if (fkjy_contact.length < 1) {
+                alert('请输入联系方式~');
+                inputFeedbackContact.focus();
+                return false;
+            }
+            if (fkjy_contact.indexOf('@') === -1) {
+                alert('联系邮箱格式不正确~');
+                inputFeedbackContact.focus();
+                return false;
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "/api/fkjy",
+                dataType: "json",
+                data: {
+                    "content": "[" + fkjy_type + "] " + fkjy_content,
+                    "contact": fkjy_contact,
+                },
+                success: function (result) {
+                    alert(result);
+                },
+                error: function (e) {
+                    if (e.status === 429) {
+                        alert('提交太频繁，请稍后再试！')
+                        return;
+                    }
+                    alert('【提交出错】 ' + e.responseText)
+                }
+            });
+
+            $('#feedbackModal').modal('hide');
+        });
+
+        $('.swhz').click(function () {
+            jAlert("合作联系tg：yssmy", 'blue', true);
+        });
+
+        $('#mzsm').click(function () {
+            jAlert("<h6>本站所有数据均系网友搜集自互联网后分享.<br><br>音频版权来自各网站,本站不提供任何音频存储和贩卖服务,旨在音乐交流分享,支持购买正版专辑.<br><br>如涉及侵权请联系我们删除.<br><br>联系tg: yssmy</h6>", 'blue', true);
+        });
+
+    });
+</script>
+
+
+
+
+</body>
+</html>
